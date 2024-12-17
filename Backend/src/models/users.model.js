@@ -1,6 +1,9 @@
 import mongoose, {Schema} from "mongoose";
 
 const expenseSchema = new Schema({
+    id : {
+        type : Number
+    },
     color: {
         type : String
     },
