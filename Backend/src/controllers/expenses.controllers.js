@@ -16,6 +16,8 @@ const addExpense = async (req, res) => {
             });
         }
 
+        let id = (user.expenses.length) + 1;
+        expense.id = id;
         user.expenses.push(expense);
         await user.save();
         
